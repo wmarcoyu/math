@@ -1,16 +1,65 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{exam}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
 \usepackage[margin=0.75in]{geometry}
+\usepackage{times}
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{graphicx}
-\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+% Code snippets color coding styles.
+% Usage: \begin{lstlisting}[style=myC++Style]
+\lstdefinestyle{myC++Style}{
+  language=C++,
+  commentstyle=\color{olive},
+  keywordstyle=\color{blue},
+  stringstyle=\color{red},
+  breaklines=true
+}
+
+\lstdefinestyle{myPythonStyle}{
+    language=Python,
+    commentstyle=\color{olive},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    stringstyle=\color{red},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{basicstyle=\ttfamily\small}
+
+\setlength{\parindent}{0pt}  % remove unwanted idents
+\pagestyle{plain}  % every page number is a single number
+
+% Math writing.
+\newtheorem{definition}{Definition}
+\newtheorem{property}{Property}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+
 \graphicspath{{path to directory}}
+
 \title{Sample title}
 \author{}
 \date{}
-\onehalfspacing{}
 \begin{document}
 
 \maketitle
